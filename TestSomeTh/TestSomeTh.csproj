@@ -43,6 +43,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppDomainProgram.cs" />
+    <Compile Include="AsyncAwaitProgram.cs" />
+    <Compile Include="CrossAppDomainDelegate.cs" />
+    <Compile Include="DotnetContext.cs" />
+    <Compile Include="ESClient.cs" />
+    <Compile Include="HashTableProgram.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

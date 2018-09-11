@@ -27,7 +27,7 @@ namespace ErrorHandlingApplication
                 }
 
             }
-            static void ErrorHandlingMain(string[] args)
+            static void DivNumbersMain(string[] args)
             {
                 DivNumbers d = new DivNumbers();
                 d.division(25, 0);
