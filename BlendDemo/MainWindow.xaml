@@ -1,0 +1,34 @@
+﻿<Window x:Class="BlendDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BlendDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="520" d:DataContext="{d:DesignData /SampleData/SampleDataSource/SampleDataSource.xaml}">
+    <Window.Resources>
+        <Style x:Key="TextBlockStyle1" TargetType="{x:Type TextBlock}">
+            <Setter Property="FontFamily" Value="SimHei"/>
+            <Setter Property="FontSize" Value="22"/>
+        </Style>
+        <DataTemplate x:Key="DataTemplate1">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="400"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Height="Auto" TextWrapping="Wrap" Text="{Binding Name}" Style="{DynamicResource CoreTextStyle}"/>
+                <CheckBox Content="男" Grid.Column="1" Height="Auto" Width="Auto" IsChecked="{Binding Sex}" Style="{DynamicResource CheckBoxBaseStyle}"/>
+            </Grid>
+        </DataTemplate>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="人员列表" Margin="10" Style="{DynamicResource TitleTextStyle}"/>
+        <ListBox Grid.Row="1" ItemsSource="{Binding Persons}" ItemTemplate="{DynamicResource DataTemplate1}" HorizontalAlignment="Stretch"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+   *********  请勿修改此文件   *********
+   此文件由设计工具再生成。更改
+   此文件可能会导致错误。
+-->
+<xs:schema xmlns:blend="http://schemas.microsoft.com/expression/blend/2008" xmlns:tns="Expression.Blend.SampleData.SampleDataSource" targetNamespace="Expression.Blend.SampleData.SampleDataSource" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="SampleDataSource" type="tns:SampleDataSource" />
+  <xs:complexType name="SampleDataSource">
+    <xs:sequence>
+      <xs:element name="Persons" type="tns:Persons" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Persons">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" name="PersonsItem" type="tns:PersonsItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PersonsItem">
+    <xs:attribute name="Name" type="xs:string" />
+    <xs:attribute name="Sex" type="xs:boolean" />
+  </xs:complexType>
+</xs:schema>

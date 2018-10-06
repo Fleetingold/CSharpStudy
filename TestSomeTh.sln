@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# Blend for Visual Studio 15
 VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSomeTh", "TestSomeTh\TestSomeTh.csproj", "{66D9843B-8189-4D8C-B811-1C226C781864}"
@@ -12,6 +12,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQDemo", "RabbitMQDemo\RabbitMQDemo.csproj", "{C6E5BAFC-604D-408C-88E0-77FF888EC7F6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefitDemo", "RefitDemo\RefitDemo.csproj", "{F331F845-4352-4CE9-A8C1-E5471CF90C24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlendDemo", "BlendDemo\BlendDemo.csproj", "{B75D090C-68F1-4845-B009-93B0E6FBD9B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{F331F845-4352-4CE9-A8C1-E5471CF90C24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F331F845-4352-4CE9-A8C1-E5471CF90C24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F331F845-4352-4CE9-A8C1-E5471CF90C24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B75D090C-68F1-4845-B009-93B0E6FBD9B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B75D090C-68F1-4845-B009-93B0E6FBD9B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B75D090C-68F1-4845-B009-93B0E6FBD9B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B75D090C-68F1-4845-B009-93B0E6FBD9B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
