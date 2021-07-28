@@ -3,7 +3,7 @@ using System.Reflection;
 using System.Security.Principal;
 using System.Threading;
 
-namespace TestSomeTh
+namespace CSharpStudy
 {
 	class AppDomainProgram
 	{

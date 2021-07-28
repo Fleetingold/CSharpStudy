@@ -1,10 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Blend for Visual Studio 15
-VisualStudioVersion = 15.0.27130.2003
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31521.260
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSomeTh", "TestSomeTh\TestSomeTh.csproj", "{66D9843B-8189-4D8C-B811-1C226C781864}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncFileIODemo", "AsyncFileIODemo\AsyncFileIODemo.csproj", "{20EFEBFB-D8A1-4C26-B6D0-C59EC005CDF1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElasticSearchEngine", "ElasticSearchEngine\ElasticSearchEngine.csproj", "{B70663D9-A8B1-4A20-9946-4CAB7C50C9E0}"
@@ -15,16 +13,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefitDemo", "RefitDemo\Refi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlendDemo", "BlendDemo\BlendDemo.csproj", "{B75D090C-68F1-4845-B009-93B0E6FBD9B0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpStudy", "CSharpStudy\CSharpStudy.csproj", "{66D9843B-8189-4D8C-B811-1C226C781864}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{66D9843B-8189-4D8C-B811-1C226C781864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{66D9843B-8189-4D8C-B811-1C226C781864}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{66D9843B-8189-4D8C-B811-1C226C781864}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{66D9843B-8189-4D8C-B811-1C226C781864}.Release|Any CPU.Build.0 = Release|Any CPU
 		{20EFEBFB-D8A1-4C26-B6D0-C59EC005CDF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{20EFEBFB-D8A1-4C26-B6D0-C59EC005CDF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20EFEBFB-D8A1-4C26-B6D0-C59EC005CDF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,6 +41,10 @@ Global
 		{B75D090C-68F1-4845-B009-93B0E6FBD9B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B75D090C-68F1-4845-B009-93B0E6FBD9B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B75D090C-68F1-4845-B009-93B0E6FBD9B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66D9843B-8189-4D8C-B811-1C226C781864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66D9843B-8189-4D8C-B811-1C226C781864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66D9843B-8189-4D8C-B811-1C226C781864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66D9843B-8189-4D8C-B811-1C226C781864}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

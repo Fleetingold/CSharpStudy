@@ -6,11 +6,11 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace TestSomeTh
+namespace CSharpStudy
 {
     class AsyncAwaitProgram
     {
-        public static void AsyncAwaitMain()
+        public static void Main()
         {
             Console.WriteLine("Hey David, How much is 98745 divided by 7?");
 

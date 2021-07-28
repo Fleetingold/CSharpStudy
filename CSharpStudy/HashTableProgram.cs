@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestSomeTh
+namespace CSharpStudy
 {
     /// <summary>
     /// 2018-05-21  HashTable的小栗子！
