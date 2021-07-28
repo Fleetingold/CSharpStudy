@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{66D9843B-8189-4D8C-B811-1C226C781864}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>TestSomeTh</RootNamespace>
-    <AssemblyName>TestSomeTh</AssemblyName>
+    <RootNamespace>CSharpStudy</RootNamespace>
+    <AssemblyName>CSharpStudy</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
