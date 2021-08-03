@@ -123,7 +123,7 @@ class EmitWriteLineDemo
         return result;
     }
 
-    public static void Main()
+    public static void EmitWriteLineMain()
     {
 
         object[] ctorParams = new object[2];
