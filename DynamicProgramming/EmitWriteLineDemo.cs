@@ -119,7 +119,11 @@ class EmitWriteLineDemo
 
         writeStrIL.Emit(OpCodes.Ret);
 
-        return pointTypeBld.CreateType();
+        var result = pointTypeBld.CreateType();
+
+        myAsmBuilder.Save(myAsmName.Name + ".dll");
+
+        return result;
     }
 
     public static void Main()
