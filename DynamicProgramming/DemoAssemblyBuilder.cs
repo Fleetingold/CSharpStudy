@@ -4,7 +4,7 @@ using System.Reflection.Emit;
 
 class DemoAssemblyBuilder
 {
-    public static void AssemblyBuilderMain()
+    public static void Main()
     {
         // An assembly consists of one or more modules, each of which
         // contains zero or more types. This code creates a single-module
