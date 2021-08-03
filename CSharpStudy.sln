@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlendDemo", "BlendDemo\Blen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpStudy", "CSharpStudy\CSharpStudy.csproj", "{66D9843B-8189-4D8C-B811-1C226C781864}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicProgramming", "DynamicProgramming\DynamicProgramming.csproj", "{659C58DC-7492-446A-BA08-C362989FE7D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{66D9843B-8189-4D8C-B811-1C226C781864}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66D9843B-8189-4D8C-B811-1C226C781864}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66D9843B-8189-4D8C-B811-1C226C781864}.Release|Any CPU.Build.0 = Release|Any CPU
+		{659C58DC-7492-446A-BA08-C362989FE7D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{659C58DC-7492-446A-BA08-C362989FE7D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{659C58DC-7492-446A-BA08-C362989FE7D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{659C58DC-7492-446A-BA08-C362989FE7D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
