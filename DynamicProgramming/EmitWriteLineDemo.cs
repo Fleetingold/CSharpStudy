@@ -10,13 +10,12 @@ class EmitWriteLineDemo
     {
         Type[] ctorParams = new Type[] { typeof(int), typeof(int) };
 
-        AppDomain myDomain = Thread.GetDomain();
         AssemblyName myAsmName = new AssemblyName();
         myAsmName.Name = "MyDynamicAssembly";
 
-        AssemblyBuilder myAsmBuilder = myDomain.DefineDynamicAssembly(myAsmName, AssemblyBuilderAccess.RunAndSave);
+        AssemblyBuilder myAsmBuilder = AssemblyBuilder.DefineDynamicAssembly(myAsmName, AssemblyBuilderAccess.Run);
 
-        ModuleBuilder pointModule = myAsmBuilder.DefineDynamicModule("PointModule", "Point.dll");
+        ModuleBuilder pointModule = myAsmBuilder.DefineDynamicModule("PointModule");
 
         TypeBuilder pointTypeBld = pointModule.DefineType("Point", TypeAttributes.Public);
 
@@ -120,8 +119,6 @@ class EmitWriteLineDemo
         writeStrIL.Emit(OpCodes.Ret);
 
         var result = pointTypeBld.CreateType();
-
-        myAsmBuilder.Save(myAsmName.Name + ".dll");
 
         return result;
     }

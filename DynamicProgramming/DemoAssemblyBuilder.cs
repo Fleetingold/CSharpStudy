@@ -39,11 +39,11 @@ class DemoAssemblyBuilder
         */
 
         AssemblyName aName = new AssemblyName("DynamicAssemblyExample");
-        AssemblyBuilder ab = AppDomain.CurrentDomain.DefineDynamicAssembly(aName, AssemblyBuilderAccess.RunAndSave);
+        AssemblyBuilder ab = AssemblyBuilder.DefineDynamicAssembly(aName, AssemblyBuilderAccess.Run);
 
         // For a single-module assembly, the module name is usually
         // the assembly name plus an extension.
-        ModuleBuilder mb = ab.DefineDynamicModule(aName.Name, aName.Name + ".dll");
+        ModuleBuilder mb = ab.DefineDynamicModule(aName.Name);
 
         TypeBuilder tb = mb.DefineType("MyDynamicType", TypeAttributes.Public);
 
@@ -153,7 +153,6 @@ class DemoAssemblyBuilder
         // examine the assembly. You can also write a program that has
         // a reference to the assembly, and use the MyDynamicType type.
         //
-        ab.Save(aName.Name + ".dll");
 
         // Because AssemblyBuilderAccess includes Run, the code can be
         // executed immediately. Start by getting reflection objects for
