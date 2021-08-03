@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31521.260
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncFileIODemo", "AsyncFileIODemo\AsyncFileIODemo.csproj", "{20EFEBFB-D8A1-4C26-B6D0-C59EC005CDF1}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlendDemo", "BlendDemo\BlendDemo.csproj", "{B75D090C-68F1-4845-B009-93B0E6FBD9B0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpStudy", "CSharpStudy\CSharpStudy.csproj", "{66D9843B-8189-4D8C-B811-1C226C781864}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicProgramming", "DynamicProgramming\DynamicProgramming.csproj", "{9099F5BF-28DE-46D9-90CF-D49274A3EF16}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{66D9843B-8189-4D8C-B811-1C226C781864}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66D9843B-8189-4D8C-B811-1C226C781864}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66D9843B-8189-4D8C-B811-1C226C781864}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9099F5BF-28DE-46D9-90CF-D49274A3EF16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9099F5BF-28DE-46D9-90CF-D49274A3EF16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9099F5BF-28DE-46D9-90CF-D49274A3EF16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9099F5BF-28DE-46D9-90CF-D49274A3EF16}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
