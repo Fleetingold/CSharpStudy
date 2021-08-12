@@ -185,7 +185,7 @@ namespace CSharpStudy
                 Console.WriteLine("Regular method");
         }
 
-        static void Main(string[] args)
+        static void AsyncStateMachineMain(string[] args)
         {
             ShowResult(classType: typeof(TheClass), methodName: nameof(TheClass.AsyncMethod));
             ShowResult(classType: typeof(TheClass), methodName: nameof(TheClass.RegularMethod));

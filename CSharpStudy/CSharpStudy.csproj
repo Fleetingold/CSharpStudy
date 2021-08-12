@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppDomainProgram.cs" />
+    <Compile Include="AssemblyLoadProgram.cs" />
     <Compile Include="AsyncAwaitProgram.cs" />
     <Compile Include="CrossAppDomainDelegate.cs" />
     <Compile Include="DotnetContext.cs" />
