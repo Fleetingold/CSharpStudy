@@ -52,6 +52,7 @@
     <Compile Include="DotNetEvents.cs" />
     <Compile Include="ESClient.cs" />
     <Compile Include="HashTableProgram.cs" />
+    <Compile Include="ImplementInterfaceEvents.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
