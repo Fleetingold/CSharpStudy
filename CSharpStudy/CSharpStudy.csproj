@@ -47,6 +47,7 @@
     <Compile Include="AssemblyLoadProgram.cs" />
     <Compile Include="AsyncAwaitProgram.cs" />
     <Compile Include="BaseClassEvents.cs" />
+    <Compile Include="BookStore.cs" />
     <Compile Include="CrossAppDomainDelegate.cs" />
     <Compile Include="DotnetContext.cs" />
     <Compile Include="DotNetEvents.cs" />

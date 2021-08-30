@@ -142,7 +142,7 @@ namespace CSharpStudy
         }
     }
 
-    class Test
+    partial class Test
     {
         static void BaseClassEventsMain()
         {
