@@ -18,7 +18,7 @@ namespace CSharpStudy
     }
 
     // Class that publishes an event
-    class Publisher
+    partial class Publisher
     {
         // Declare the event using EventHandler<T>
         public event EventHandler<CustomEventArgs> RaiseCustomerEvent;
