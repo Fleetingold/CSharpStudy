@@ -9,7 +9,7 @@ namespace CSharpStudy
 {
     public class AssemblyLoadProgram
     {
-        public static void Main()
+        public static void AssemblyLoadMain()
         {
             // You must supply a valid fully qualified assembly name.
             Assembly SampleAssembly = Assembly.Load("System.data, version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089");
