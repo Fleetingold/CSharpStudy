@@ -43,27 +43,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppDomainProgram.cs" />
-    <Compile Include="AssemblyLoadProgram.cs" />
-    <Compile Include="AsyncAwaitProgram.cs" />
-    <Compile Include="BaseClassEvents.cs" />
-    <Compile Include="BookStore.cs" />
-    <Compile Include="CovariantDemo.cs" />
-    <Compile Include="CrossAppDomainDelegate.cs" />
-    <Compile Include="DotnetContext.cs" />
-    <Compile Include="DotNetEvents.cs" />
-    <Compile Include="ESClient.cs" />
-    <Compile Include="HashTableProgram.cs" />
-    <Compile Include="ImplementInterfaceEvents.cs" />
+    <Compile Include="AppDomain\AppDomainProgram.cs" />
+    <Compile Include="AssemblyLoad\AssemblyLoadProgram.cs" />
+    <Compile Include="AsyncAwait\AsyncAwaitProgram.cs" />
+    <Compile Include="Events\BaseClassEvents.cs" />
+    <Compile Include="Delegates\BookStore.cs" />
+    <Compile Include="Variants\CovariantDemo.cs" />
+    <Compile Include="AppDomain\CrossAppDomainDelegate.cs" />
+    <Compile Include="DotnetContext\DotnetContext.cs" />
+    <Compile Include="Events\DotNetEvents.cs" />
+    <Compile Include="FunctionPointers.cs" />
+    <Compile Include="HashTable\HashTableProgram.cs" />
+    <Compile Include="Events\ImplementInterfaceEvents.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SampleEventArgs.cs" />
-    <Compile Include="SampleGenericDelegate.cs" />
-    <Compile Include="VariantAmbiguity.cs" />
-    <Compile Include="WrapTwoInterfaceEvents.cs" />
+    <Compile Include="Events\SampleEventArgs.cs" />
+    <Compile Include="Delegates\SampleGenericDelegate.cs" />
+    <Compile Include="Variants\VariantAmbiguity.cs" />
+    <Compile Include="Events\WrapTwoInterfaceEvents.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

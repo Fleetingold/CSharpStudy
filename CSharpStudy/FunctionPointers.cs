@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace CSharpStudy
 {
-    class ESClient
+    public class FunctionPointers
     {
+
     }
 }
