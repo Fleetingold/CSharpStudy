@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31515.178
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32414.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncFileIODemo", "AsyncFileIODemo\AsyncFileIODemo.csproj", "{20EFEBFB-D8A1-4C26-B6D0-C59EC005CDF1}"
 EndProject
@@ -15,7 +15,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlendDemo", "BlendDemo\Blen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpStudy", "CSharpStudy\CSharpStudy.csproj", "{66D9843B-8189-4D8C-B811-1C226C781864}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicProgramming", "DynamicProgramming\DynamicProgramming.csproj", "{B5EB30A8-25CF-4AD6-ADB8-C1EE629A7518}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamicProgramming", "DynamicProgramming\DynamicProgramming.csproj", "{B5EB30A8-25CF-4AD6-ADB8-C1EE629A7518}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluentSchedulerDemo", "FluentSchedulerDemo\FluentSchedulerDemo.csproj", "{C759BBC1-D3E2-400D-AD88-AE15DF01A6C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{B5EB30A8-25CF-4AD6-ADB8-C1EE629A7518}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5EB30A8-25CF-4AD6-ADB8-C1EE629A7518}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5EB30A8-25CF-4AD6-ADB8-C1EE629A7518}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C759BBC1-D3E2-400D-AD88-AE15DF01A6C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C759BBC1-D3E2-400D-AD88-AE15DF01A6C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C759BBC1-D3E2-400D-AD88-AE15DF01A6C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C759BBC1-D3E2-400D-AD88-AE15DF01A6C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
