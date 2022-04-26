@@ -1,6 +1,4 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using FluentSchedulerDemo.Registries;
-
 Console.WriteLine("Hello, World!");
 
 //1、Plan A
@@ -12,7 +10,13 @@ Console.WriteLine("Hello, World!");
 //);
 
 //2、Plan B
-FluentScheduler.Registry registry = new SubErpCommissionBussinessAutoSyncRegistry();
+//FluentScheduler.Registry registry = new FluentSchedulerDemo.Registries.SubErpCommissionBussinessAutoSyncRegistry();
+
+//FluentScheduler.JobManager.Initialize(registry);
+
+//3、Plan C
+var registry = new FluentScheduler.Registry();
+registry.Schedule<FluentSchedulerDemo.Jobs.SubErpCommissionBussinessAutoSyncJob>().ToRunNow().AndEvery(3000).Milliseconds();
 
 FluentScheduler.JobManager.Initialize(registry);
 
