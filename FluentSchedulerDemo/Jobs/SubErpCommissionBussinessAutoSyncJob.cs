@@ -8,6 +8,8 @@ namespace FluentSchedulerDemo.Jobs
         {
             Console.WriteLine("Start SubErpCommissionBussinessAutoSyncJob!");
 
+            throw new NotImplementedException();
+
             Console.WriteLine("SubErpCommissionBussinessAutoSyncJob Success!");
         }
     }

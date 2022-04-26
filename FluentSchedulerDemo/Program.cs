@@ -1,5 +1,17 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using Serilog;
+
 Console.WriteLine("Hello, World!");
+
+//0、Serilog日志配置
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Debug()
+    .WriteTo.File("logs\\log.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
+
+FluentScheduler.JobManager.JobStart += info => Log.Information($"{info.Name}: started");
+FluentScheduler.JobManager.JobEnd += info => Log.Information($"{info.Name}: ended ({info.Duration})");
+FluentScheduler.JobManager.JobException += info => Log.Error("An error just happened with a scheduled job: " + info.Exception);
 
 //1、Plan A
 //FluentScheduler.JobManager.Initialize();

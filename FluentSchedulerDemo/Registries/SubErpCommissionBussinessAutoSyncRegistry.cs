@@ -12,6 +12,7 @@ namespace FluentSchedulerDemo.Registries
     {
         public SubErpCommissionBussinessAutoSyncRegistry()
         {
+            NonReentrantAsDefault();
             Schedule<SubErpCommissionBussinessAutoSyncJob>().ToRunNow().AndEvery(3000).Milliseconds();
         }
     }
