@@ -6,7 +6,7 @@ Console.WriteLine("Hello, World!");
 //0、Serilog日志配置
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Debug()
-    .WriteTo.File("logs\\log.txt", rollingInterval: RollingInterval.Day)
+    .WriteTo.File(new Serilog.Formatting.Compact.CompactJsonFormatter(), "logs\\log.json", rollingInterval: RollingInterval.Day)
     .WriteTo.Console(new Serilog.Formatting.Compact.RenderedCompactJsonFormatter())
     .CreateLogger();
 
