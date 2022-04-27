@@ -7,6 +7,7 @@ Console.WriteLine("Hello, World!");
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Debug()
     .WriteTo.File("logs\\log.txt", rollingInterval: RollingInterval.Day)
+    .WriteTo.Console(new Serilog.Formatting.Compact.RenderedCompactJsonFormatter())
     .CreateLogger();
 
 FluentScheduler.JobManager.JobStart += info => Log.Information($"{info.Name}: started");
