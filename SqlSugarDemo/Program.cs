@@ -16,6 +16,8 @@ Type[] types = Assembly.LoadFrom("SqlSugarDemo.dll").GetTypes()
                .ToArray();
 
 //sugarHelper.InitTables(types);
+
+sugarHelper.BackupTable();
 #endregion
 
 string sSql = "select * from Person; select * from Device";

@@ -44,12 +44,17 @@ namespace SqlSugarDemo
 
         internal void InitTable()
         {
-            _db.CodeFirst.InitTables(typeof(Person), typeof(Device));
+            _db.CodeFirst.BackupTable().SetStringDefaultLength(50).InitTables(typeof(Person), typeof(Device));
         }
 
         internal void InitTables(params Type[] entityTypes)
         {
-            _db.CodeFirst.InitTables(entityTypes);
+            _db.CodeFirst.BackupTable().SetStringDefaultLength(50).InitTables(entityTypes);
+        }
+
+        internal void BackupTable()
+        {
+            _db.CodeFirst.BackupTable();
         }
         #endregion
     }
