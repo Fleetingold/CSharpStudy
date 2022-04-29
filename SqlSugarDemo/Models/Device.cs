@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SqlSugarDemo
+namespace SqlSugarDemo.Models
 {
-    internal class Device
+    public class Device
     {
         public Device(string description, string deviceName)
         {

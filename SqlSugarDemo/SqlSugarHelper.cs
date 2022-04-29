@@ -1,4 +1,5 @@
 ﻿using SqlSugar;
+using SqlSugarDemo.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -44,6 +45,11 @@ namespace SqlSugarDemo
         internal void InitTable()
         {
             _db.CodeFirst.InitTables(typeof(Person), typeof(Device));
+        }
+
+        internal void InitTables(params Type[] entityTypes)
+        {
+            _db.CodeFirst.InitTables(entityTypes);
         }
         #endregion
     }
