@@ -3,7 +3,7 @@ Console.WriteLine("Hello, World!");
 
 AutoMapperDemo.AutoMapperHelper autoMapper = new AutoMapperDemo.AutoMapperHelper();
 
-AutoMapperDemo.Models.Order order = new AutoMapperDemo.Models.Order();
+AutoMapperDemo.Models.Order order = new AutoMapperDemo.Models.Order(1, "a0001");
 
 var orderDto = autoMapper.GetOrderDto(order);
 

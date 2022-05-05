@@ -8,5 +8,14 @@ namespace AutoMapperDemo.Models
 {
     internal class OrderDto
     {
+        public OrderDto(int id, string orderNo)
+        {
+            Id = id;
+            OrderNo = orderNo;
+        }
+
+        public int Id { get; set; }
+
+        public string OrderNo { get; set; }
     }
 }

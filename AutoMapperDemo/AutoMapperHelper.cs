@@ -36,7 +36,7 @@ namespace AutoMapperDemo
                 return dto2;
             }
 
-            return new OrderDto();
+            return new OrderDto(0, string.Empty);
         }
     }
 }
