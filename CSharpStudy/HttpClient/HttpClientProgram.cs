@@ -21,11 +21,9 @@ namespace CSharpStudy
 
             string postUri = "http://60.170.183.213:2587/wms/purchin/writebackinfo";
 
-            StringContent httpContent = new StringContent(param, Encoding.UTF8, "application/json");
+            PostAsync(postUri, param);
 
-            PostAsync(postUri, httpContent);
-
-            SendAsync(postUri, httpContent);
+            SendAsync(postUri, param);
 
             Console.ReadKey();
         }
@@ -42,8 +40,10 @@ namespace CSharpStudy
             }
         }
 
-        private static void PostAsync(string requestUri, StringContent httpContent)
+        private static void PostAsync(string requestUri, string param)
         {
+            StringContent httpContent = new StringContent(param, Encoding.UTF8, "application/json");
+
             HttpResponseMessage response = _httpClient.PostAsync(requestUri, httpContent).GetAwaiter().GetResult();
 
             string responseContent = response.Content.ReadAsStringAsync().GetAwaiter().GetResult();
@@ -51,8 +51,10 @@ namespace CSharpStudy
             Console.WriteLine($"Post {response.StatusCode} Content:{responseContent}");
         }
 
-        private static void SendAsync(string requestUri, StringContent httpContent)
+        private static void SendAsync(string requestUri, string param)
         {
+            StringContent httpContent = new StringContent(param, Encoding.UTF8, "application/json");
+
             HttpRequestMessage requestMessage = new HttpRequestMessage()
             {
                 Content = httpContent,
