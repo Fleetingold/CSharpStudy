@@ -48,6 +48,7 @@
     <Compile Include="AsyncAwait\AsyncAwaitProgram.cs" />
     <Compile Include="Events\BaseClassEvents.cs" />
     <Compile Include="Delegates\BookStore.cs" />
+    <Compile Include="HttpClient\HttpClientProgram.cs" />
     <Compile Include="Variants\CovariantDemo.cs" />
     <Compile Include="AppDomain\CrossAppDomainDelegate.cs" />
     <Compile Include="DotnetContext\DotnetContext.cs" />

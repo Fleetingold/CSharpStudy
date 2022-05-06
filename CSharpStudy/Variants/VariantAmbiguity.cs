@@ -38,7 +38,7 @@ namespace CSharpStudy
 
     class VariantAmbiguity
     {
-        public static void Main()
+        public static void VariantAmbiguityMain()
         {
             IEnumerable<Animal> pets = new Pets();
             pets.GetEnumerator();
