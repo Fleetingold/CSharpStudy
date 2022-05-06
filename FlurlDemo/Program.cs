@@ -36,7 +36,7 @@ var resoponse = await "http://60.170.183.213:2587/wms/purchin/writebackinfo".Pos
     KeepTime = dt,
     KeepRemark = "",
     ErpSn = 3
-}).ReceiveJson();
+}).ReceiveString();
 
 // Flurl will use 1 HttpClient instance per host
 var person = await "https://api.com"
