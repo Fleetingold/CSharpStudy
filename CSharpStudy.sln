@@ -32,7 +32,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqlSugarDemo", "SqlSugarDem
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DapperDemo", "DapperDemo\DapperDemo.csproj", "{EF731A6C-DB83-4957-8705-FB6E7859675E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoMapperDemo", "AutoMapperDemo\AutoMapperDemo.csproj", "{8840E0EF-12FF-4341-ABDF-3106BD4AD47F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoMapperDemo", "AutoMapperDemo\AutoMapperDemo.csproj", "{8840E0EF-12FF-4341-ABDF-3106BD4AD47F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp.Net Core WebApp", "Asp.Net Core WebApp\Asp.Net Core WebApp.csproj", "{697614D4-A3E9-45F5-B3A5-7ED751BEEEE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp.Net Core WebApi", "Asp.Net Core WebApi\Asp.Net Core WebApi.csproj", "{99D7EE91-4975-4BCA-8B82-83979D3316EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp.Net Core Empty", "Asp.Net Core Empty\Asp.Net Core Empty.csproj", "{49F82704-9279-40D6-B85C-3B70851C5E7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp.Net Core MVC WebApp", "Asp.Net Core MVC WebApp\Asp.Net Core MVC WebApp.csproj", "{0A5AA825-4FF0-44AE-8DF0-42EF8DA9B297}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp.Net Core GrpcService", "Asp.Net Core GrpcService\Asp.Net Core GrpcService.csproj", "{991AC0AE-7FD6-4692-B97D-7C11421A130F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp.Net Core with Angular", "Asp.Net Core with Angular\Asp.Net Core with Angular.csproj", "{0DA0FDF5-A8D9-4B4C-9DF9-91B81481E6C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp.Net Core with React.js", "Asp.Net Core with React.js\Asp.Net Core with React.js.csproj", "{36EF9C3C-112E-4C00-9F34-974168872265}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp.Net Core with React.js and Redux", "Asp.Net Core with React.js and Redux\Asp.Net Core with React.js and Redux.csproj", "{5838E417-BE1D-48AB-99AD-262F9CAC3E75}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -92,6 +108,38 @@ Global
 		{8840E0EF-12FF-4341-ABDF-3106BD4AD47F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8840E0EF-12FF-4341-ABDF-3106BD4AD47F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8840E0EF-12FF-4341-ABDF-3106BD4AD47F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{697614D4-A3E9-45F5-B3A5-7ED751BEEEE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{697614D4-A3E9-45F5-B3A5-7ED751BEEEE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{697614D4-A3E9-45F5-B3A5-7ED751BEEEE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{697614D4-A3E9-45F5-B3A5-7ED751BEEEE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99D7EE91-4975-4BCA-8B82-83979D3316EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99D7EE91-4975-4BCA-8B82-83979D3316EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99D7EE91-4975-4BCA-8B82-83979D3316EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99D7EE91-4975-4BCA-8B82-83979D3316EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49F82704-9279-40D6-B85C-3B70851C5E7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49F82704-9279-40D6-B85C-3B70851C5E7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49F82704-9279-40D6-B85C-3B70851C5E7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49F82704-9279-40D6-B85C-3B70851C5E7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A5AA825-4FF0-44AE-8DF0-42EF8DA9B297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A5AA825-4FF0-44AE-8DF0-42EF8DA9B297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A5AA825-4FF0-44AE-8DF0-42EF8DA9B297}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A5AA825-4FF0-44AE-8DF0-42EF8DA9B297}.Release|Any CPU.Build.0 = Release|Any CPU
+		{991AC0AE-7FD6-4692-B97D-7C11421A130F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{991AC0AE-7FD6-4692-B97D-7C11421A130F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{991AC0AE-7FD6-4692-B97D-7C11421A130F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{991AC0AE-7FD6-4692-B97D-7C11421A130F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DA0FDF5-A8D9-4B4C-9DF9-91B81481E6C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DA0FDF5-A8D9-4B4C-9DF9-91B81481E6C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DA0FDF5-A8D9-4B4C-9DF9-91B81481E6C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DA0FDF5-A8D9-4B4C-9DF9-91B81481E6C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36EF9C3C-112E-4C00-9F34-974168872265}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36EF9C3C-112E-4C00-9F34-974168872265}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36EF9C3C-112E-4C00-9F34-974168872265}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36EF9C3C-112E-4C00-9F34-974168872265}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5838E417-BE1D-48AB-99AD-262F9CAC3E75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5838E417-BE1D-48AB-99AD-262F9CAC3E75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5838E417-BE1D-48AB-99AD-262F9CAC3E75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5838E417-BE1D-48AB-99AD-262F9CAC3E75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

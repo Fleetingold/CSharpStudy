@@ -13,6 +13,13 @@ namespace RefitDemo
     {
         static async Task Main(string[] args)
         {
+            var wmsApi = RestService.For<IWmsApi>("http://60.170.183.213:2587");
+
+            PurchInWriteBackInfoParam backInfoParam = new PurchInWriteBackInfoParam();
+
+            var response = await wmsApi.PurchInWriteBack(backInfoParam);
+
+
             var testApi = RestService.For<ITestApi>("http://localhost:52044/");
 
             var str = await testApi.GetTest();
@@ -41,6 +48,71 @@ namespace RefitDemo
             Console.WriteLine("获得的返回result.Bar为：" + result.Bar);
             Console.ReadKey();
         }
+    }
+
+    interface IWmsApi
+    {
+        [Post("/wms/purchin/writebackinfo")]
+        Task<string> PurchInWriteBack([Body] PurchInWriteBackInfoParam backInfoParam);
+    }
+
+    public class PurchInWriteBackInfoParam
+    {
+        public Guid ID { get; set; }
+
+        public string OrderNo { get; set; }
+
+        public Guid StoreID { get; set; }
+
+        public string StoreNum { get; set; }
+
+        public string StoreType { get; set; }
+
+        public string StoreArea { get; set; }
+
+        public string StoreLocation { get; set; }
+
+        public string DrugNum { get; set; }
+
+        public string BatchNo { get; set; }
+
+        public string ProductDate { get; set; }
+
+        public string DueDate { get; set; }
+
+        public decimal ReceiptQuantity { get; set; }
+
+        public decimal ReceiptRejectQuantity { get; set; }
+
+        public string Receipter { get; set; }
+
+        public DateTime ReceiptTime { get; set; }
+
+        public string ReceiptRemark { get; set; }
+
+        public decimal CheckQuantity { get; set; }
+
+        public decimal CheckRejectQuantity { get; set; }
+
+        public string Checker { get; set; }
+
+        public DateTime CheckTime { get; set; }
+
+        public string CheckRemark { get; set; }
+
+        public string CheckerND { get; set; }
+
+        public decimal KeepQuantity { get; set; }
+
+        public decimal KeepRejectQuantity { get; set; }
+
+        public string Keeper { get; set; }
+
+        public DateTime KeepTime { get; set; }
+
+        public string KeepRemark { get; set; }
+
+        public int ErpSn { get; set; }
     }
 
     interface ITestApi

@@ -1,4 +1,5 @@
 ﻿using Flurl;
+using Flurl.Http;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
@@ -30,6 +31,15 @@ namespace FlurlDemoTests
             Assert.AreEqual("/with/path", url.Path);
             Assert.AreEqual("x=1&y=2", url.Query);
             Assert.AreEqual("foo", url.Fragment);
+        }
+
+        [TestMethod]
+        public async void FlurlHttpTest()
+        {
+            var resoponse = await "http://60.170.183.213:2587/wms/purchin/writebackinfo".PostJsonAsync(new 
+            {
+                ID = Guid.NewGuid()
+            }).ReceiveJson();
         }
     }
 }
