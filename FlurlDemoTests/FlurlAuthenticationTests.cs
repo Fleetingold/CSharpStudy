@@ -61,6 +61,25 @@ namespace FlurlDemoTests
         }
 
         [TestMethod]
+        public async Task Request_Should_Return_Ok_When_Token_Is_Valid()
+        {
+            if (_client != null)
+            {
+                string sTokenByAsymmetricAlgorithm = "eyJraWQiOiJDRkFFQUUyRDY1MEE2Q0E5ODYyNTc1REU1NDM3MUVBOTgwNjQzODQ5IiwidHlwIjoiSldUIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJ0ZXN0IiwiZXhwIjoyMTQ3NDgzNjQ4LCJGaXJzdE5hbWUiOiJKZXN1cyIsIkFnZSI6MzN9.ZeGfWN3kBHZLiSh4jzzn6kx7F6lNu5OsowZW0Sv-_wpSgQO2_QXFUPLx23wm4J9rjMGQlSksEtCLd_X3iiBOBLbxAUWzdj59iJIAh485unZj12sBJ7KHDVsOMc6DcSJdwRo9S9yiJ_RJ57R-dn4uRdZTBXBZHrrmb35UjaAG6hFfu5d1Ap4ZjLxqDJGl0Wo4j5l6vR8HFpmiFHvqPQ4apjqkBGnitJ7oghbeRX0SIVNSkXbBDp3i9pC-hxzs2oHZC9ys0rJlfpxLls3MV4oQbQ7m6W9MrwwsdObJHI7PiTNfObLKdgySi6WkQS7rwXVz0DqRa8TXv8_USkvhsyGLMQ";
+
+                // Arrange
+                _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(
+                    JwtAuthenticationDefaults.AuthenticationScheme, sTokenByAsymmetricAlgorithm);
+
+                // Act
+                var response = await _client.GetAsync("https://example.com/");
+
+                // Assert
+                response.StatusCode.Should().Be(HttpStatusCode.OK);
+            }
+        }
+
+        [TestMethod]
         public async Task Request_Should_Return_Unauthorized_When_Token_Is_Empty()
         {
             if (_client != null)
