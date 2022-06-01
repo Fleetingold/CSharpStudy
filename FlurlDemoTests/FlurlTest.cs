@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace FlurlDemoTests
 {
+    [TestClass]
     public class FlurlTest
     {
         [TestMethod()]

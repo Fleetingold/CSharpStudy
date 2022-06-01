@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace FlurlDemo.Models.Tests
 {
+    [TestClass]
     public class PersonTests
     {
         [TestMethod()]
