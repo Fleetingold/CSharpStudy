@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.TestHost;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Net.Http.Headers;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
@@ -111,6 +112,18 @@ namespace FlurlDemoTests
             // Assert
             action.Should()
                   .Throw<FlurlHttpException>("because token is Empty.");
+        }
+
+        [TestMethod]
+        public void Flurl_Request_Should_Return_200_When_Token_Is_Valid()
+        {
+            string sTokenByAsymmetricAlgorithm = "eyJraWQiOiJDRkFFQUUyRDY1MEE2Q0E5ODYyNTc1REU1NDM3MUVBOTgwNjQzODQ5IiwidHlwIjoiSldUIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJ0ZXN0IiwiZXhwIjoyMTQ3NDgzNjQ4LCJGaXJzdE5hbWUiOiJKZXN1cyIsIkFnZSI6MzN9.ZeGfWN3kBHZLiSh4jzzn6kx7F6lNu5OsowZW0Sv-_wpSgQO2_QXFUPLx23wm4J9rjMGQlSksEtCLd_X3iiBOBLbxAUWzdj59iJIAh485unZj12sBJ7KHDVsOMc6DcSJdwRo9S9yiJ_RJ57R-dn4uRdZTBXBZHrrmb35UjaAG6hFfu5d1Ap4ZjLxqDJGl0Wo4j5l6vR8HFpmiFHvqPQ4apjqkBGnitJ7oghbeRX0SIVNSkXbBDp3i9pC-hxzs2oHZC9ys0rJlfpxLls3MV4oQbQ7m6W9MrwwsdObJHI7PiTNfObLKdgySi6WkQS7rwXVz0DqRa8TXv8_USkvhsyGLMQ";
+
+            string header = $"{JwtAuthenticationDefaults.AuthenticationScheme} {sTokenByAsymmetricAlgorithm}";
+
+            var response = "https://example.com/".WithHeader(HeaderNames.Authorization, header).GetAsync().GetAwaiter().GetResult();
+
+            response.StatusCode.Should().Be(200);
         }
 
         private static TestServer CreateServer(JwtAuthenticationOptions configureOptions)
