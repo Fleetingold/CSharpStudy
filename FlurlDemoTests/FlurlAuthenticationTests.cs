@@ -22,6 +22,7 @@ using System.Threading.Tasks;
 
 namespace FlurlDemoTests
 {
+    [TestClass]
     public class FlurlAuthenticationTests
     {
         private static readonly Fixture _fixture = new Fixture();
