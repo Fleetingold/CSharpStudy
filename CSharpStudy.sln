@@ -70,6 +70,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iOSLib", "iOSLib\iOSLib.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iOSTabbedApp", "iOSTabbedApp\iOSTabbedApp.csproj", "{F2393B61-6A9F-4E94-BC0F-07A208DFAF81}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacCatalystApp", "MacCatalystApp\MacCatalystApp.csproj", "{72154F28-D360-486B-9234-EF59C9279199}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -210,6 +212,10 @@ Global
 		{F2393B61-6A9F-4E94-BC0F-07A208DFAF81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2393B61-6A9F-4E94-BC0F-07A208DFAF81}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F2393B61-6A9F-4E94-BC0F-07A208DFAF81}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{72154F28-D360-486B-9234-EF59C9279199}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72154F28-D360-486B-9234-EF59C9279199}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72154F28-D360-486B-9234-EF59C9279199}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72154F28-D360-486B-9234-EF59C9279199}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
