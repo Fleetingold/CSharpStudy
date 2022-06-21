@@ -2,11 +2,11 @@
 {
     public static class MauiProgram
     {
-        public static MauiApp CreateMauiApp()
+        public static Microsoft.Maui.Hosting.MauiApp CreateMauiApp()
         {
-            var builder = MauiApp.CreateBuilder();
+            var builder = Microsoft.Maui.Hosting.MauiApp.CreateBuilder();
             builder
-                .UseMauiApp<App>()
+                .UseMauiApp<MauiApp.App>()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
