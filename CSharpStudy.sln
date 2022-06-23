@@ -50,29 +50,31 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Asp.Net Core with React.js"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Asp.Net Core with React.js and Redux", "Asp.Net Core with React.js and Redux\Asp.Net Core with React.js and Redux.csproj", "{5838E417-BE1D-48AB-99AD-262F9CAC3E75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiApp", "MauiApp\MauiApp.csproj", "{9FC654B4-C88E-4CDE-8DD1-BEC8D4FE0538}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiApp", "MauiApp\MauiApp.csproj", "{9FC654B4-C88E-4CDE-8DD1-BEC8D4FE0538}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiBlazorApp", "MauiBlazorApp\MauiBlazorApp.csproj", "{5603CC24-0EF5-48D3-B4DF-D4AF1D0ACFF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiBlazorApp", "MauiBlazorApp\MauiBlazorApp.csproj", "{5603CC24-0EF5-48D3-B4DF-D4AF1D0ACFF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiLib", "MauiLib\MauiLib.csproj", "{F59E8052-0D24-4C35-B620-0801C1359EE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiLib", "MauiLib\MauiLib.csproj", "{F59E8052-0D24-4C35-B620-0801C1359EE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidApp", "AndroidApp\AndroidApp.csproj", "{0B31831C-B22F-4EB9-8CA2-2C430FD3770D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AndroidApp", "AndroidApp\AndroidApp.csproj", "{0B31831C-B22F-4EB9-8CA2-2C430FD3770D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidLib", "AndroidLib\AndroidLib.csproj", "{83144F49-0FED-42E0-8437-BE02D8842F52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AndroidLib", "AndroidLib\AndroidLib.csproj", "{83144F49-0FED-42E0-8437-BE02D8842F52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidJavaLibBinding", "AndroidJavaLibBinding\AndroidJavaLibBinding.csproj", "{6717647E-C1CB-4A20-B038-5460AC7C1378}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AndroidJavaLibBinding", "AndroidJavaLibBinding\AndroidJavaLibBinding.csproj", "{6717647E-C1CB-4A20-B038-5460AC7C1378}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iOSApp", "iOSApp\iOSApp.csproj", "{E6440368-C406-454E-90B0-4A5427744762}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "iOSApp", "iOSApp\iOSApp.csproj", "{E6440368-C406-454E-90B0-4A5427744762}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iOSBindingLib", "iOSBindingLib\iOSBindingLib.csproj", "{CB65C35B-6F5A-4395-A9F2-4521F08C824A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "iOSBindingLib", "iOSBindingLib\iOSBindingLib.csproj", "{CB65C35B-6F5A-4395-A9F2-4521F08C824A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iOSLib", "iOSLib\iOSLib.csproj", "{FF9D37E1-EF5F-4333-926E-AD841D131F9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "iOSLib", "iOSLib\iOSLib.csproj", "{FF9D37E1-EF5F-4333-926E-AD841D131F9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iOSTabbedApp", "iOSTabbedApp\iOSTabbedApp.csproj", "{F2393B61-6A9F-4E94-BC0F-07A208DFAF81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "iOSTabbedApp", "iOSTabbedApp\iOSTabbedApp.csproj", "{F2393B61-6A9F-4E94-BC0F-07A208DFAF81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacCatalystApp", "MacCatalystApp\MacCatalystApp.csproj", "{72154F28-D360-486B-9234-EF59C9279199}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MacCatalystApp", "MacCatalystApp\MacCatalystApp.csproj", "{72154F28-D360-486B-9234-EF59C9279199}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacCatalystBindingLib", "MacCatalystBindingLib\MacCatalystBindingLib.csproj", "{3B666268-1970-40E8-988D-05801E553A60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MacCatalystBindingLib", "MacCatalystBindingLib\MacCatalystBindingLib.csproj", "{3B666268-1970-40E8-988D-05801E553A60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpElevenStudy", "CSharpElevenStudy\CSharpElevenStudy.csproj", "{8FC3B0C6-8EB4-4E07-A299-090CD02707B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -222,6 +224,10 @@ Global
 		{3B666268-1970-40E8-988D-05801E553A60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B666268-1970-40E8-988D-05801E553A60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B666268-1970-40E8-988D-05801E553A60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FC3B0C6-8EB4-4E07-A299-090CD02707B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FC3B0C6-8EB4-4E07-A299-090CD02707B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FC3B0C6-8EB4-4E07-A299-090CD02707B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FC3B0C6-8EB4-4E07-A299-090CD02707B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
